@@ -21,3 +21,11 @@ Thanks to POEdit, I was able to import many of the translations from other contr
 
 ### Skin version
 version=3259
+
+安装：
+yum install git -y
+cd /usr/local/directadmin/data/skins/evolution/lang/
+git clone https://github.com/BakaSoniji/DirectAdmin-EvolutionSkin-SimplifiedChinese.git SimplifiedChinese_Git
+ln -s SimplifiedChinese_Git/zh_Hans.po zh_Hans.po
+ln -s SimplifiedChinese_Git/login-zh_Hans.po login-zh_Hans.po
+chown -R diradmin.diradmin /usr/local/directadmin/data/skins/evolution/lang
